@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "@fontsource/ubuntu";
+
+* {
+    font-family: "Ubuntu", monospace;
+}
+
+/* TODO: add bold-weight for ubuntu font (700) */
