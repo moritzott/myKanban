@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BoardComponent } from './components/board/board.component';
 import { ExportComponent } from './pages/export/export.component';
+import { TicketComponent } from './components/ticket/ticket.component';
+import { LabelComponent } from './components/label/label.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ExportComponent } from './pages/export/export.component';
     FooterComponent,
     HeaderComponent,
     BoardComponent,
-    ExportComponent
+    ExportComponent,
+    TicketComponent,
+    LabelComponent
   ],
   imports: [
     BrowserModule,
