@@ -8,10 +8,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { InfoComponent } from './pages/info/info.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { BoardComponent } from './components/board/board.component';
 import { ExportComponent } from './pages/export/export.component';
 import { TicketComponent } from './components/ticket/ticket.component';
 import { LabelComponent } from './components/label/label.component';
+import { BoardComponent } from './pages/board/board.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +21,10 @@ import { LabelComponent } from './components/label/label.component';
     InfoComponent,
     FooterComponent,
     HeaderComponent,
-    BoardComponent,
     ExportComponent,
     TicketComponent,
-    LabelComponent
+    LabelComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,

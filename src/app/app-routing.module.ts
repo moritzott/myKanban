@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule  } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { BoardComponent } from './pages/board/board.component';
 import { AboutComponent } from './pages/about/about.component';
 import { InfoComponent } from './pages/info/info.component';
 import { ExportComponent } from './pages/export/export.component';
+import { BoardComponent } from './pages/board/board.component';
 
 const routes: Routes = [
   {
     path: "",
     component: HomeComponent
   },
+  // {
+  //   path: "board",
+  //   component: BoardComponent
+  // },
   {
     path: "board",
     component: BoardComponent
