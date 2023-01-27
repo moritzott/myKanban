@@ -65,30 +65,15 @@
                   </button>
                 </header>
               </div>
-              <div class="card mt-1">
-                <header class="card-header">
-                  <p class="card-header-title">
-                    ETF Rebalancing
-                  </p>
-                  <button class="card-header-icon" aria-label="more options">
-                    <span class="tag is-light ">Finanzen
-                    </span>
-                  </button>
-                </header>
-              </div>
-              <div class="card mt-1">
-                <header class="card-header">
-                  <p class="card-header-title">
-                    Angular Kurs
-                  </p>
-                  <button class="card-header-icon" aria-label="more options">
-                    <span class="tag is-light is-link">Persönliche Entwicklung
-                    </span>
-                  </button>
-                </header>
-              </div>
+              <app-ticket [title]="'Finanzen'" >
+                <app-label [title]="'Weiterbildung'" ></app-label>
+            </app-ticket>
+              <app-ticket [title]="'Angular-Kurs'" >
+                <app-label [title]="'Weiterbildung'" ></app-label>
+            </app-ticket>
         </div>
-    </div>
-    
+
+        
+    </div>  
 </div>
 
