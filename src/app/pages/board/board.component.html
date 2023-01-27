@@ -4,23 +4,23 @@
     <div class="column">
       <app-column [title]="'Backlog'">
         <app-ticket [title]="'Angular lernen'">
-          <app-label [title]="'IT-Bildung'"></app-label>
+          <app-label [title]="'IT-Bildung'" [highlight]="'primary-light'"></app-label>
         </app-ticket>
         <app-ticket [title]="'React lernen'">
-          <app-label [title]="'IT-Bildung'"></app-label>
+          <app-label [title]="'IT-Bildung'" [highlight]="'primary-light'" ></app-label>
         </app-ticket>
         <app-ticket [title]="'Staubsaugen'">
-          <app-label [title]="'Haushalt'"></app-label>
+          <app-label [title]="'Haushalt'" [highlight]="'danger-light'" ></app-label>
         </app-ticket>
         <app-ticket [title]="'Busticket kaufen'">
-          <app-label [title]="'Einkauf'"></app-label>
+          <app-label [title]="'Einkauf'" [highlight]="'link-light'" ></app-label>
         </app-ticket>
       </app-column>
     </div>
     <div class="column">
       <app-column [title]="'Doing'">
         <app-ticket [title]="'Geburtstagsgeschenk kaufen'">
-          <app-label [title]="'Einkauf'"></app-label>
+          <app-label [title]="'Einkauf'" [highlight]="'link-light'" ></app-label>
         </app-ticket>
         <app-ticket [title]="'Fahrrad verkaufen'">
           <app-label [title]="'Verkauf'"></app-label>
@@ -30,7 +30,7 @@
     <div class="column">
       <app-column [title]="'Closed'">
         <app-ticket [title]="'Zimmer putzen'">
-          <app-label [title]="'Haushalt'"></app-label>
+          <app-label [title]="'Haushalt'" [highlight]="'danger-light'" ></app-label>
         </app-ticket>
       </app-column>
     </div>
