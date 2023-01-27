@@ -13,6 +13,7 @@ import { TicketComponent } from './components/ticket/ticket.component';
 import { LabelComponent } from './components/label/label.component';
 import { BoardComponent } from './pages/board/board.component';
 import { ColumnComponent } from './components/column/column.component';
+import { ColumnContainerComponent } from './components/column-container/column-container.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ColumnComponent } from './components/column/column.component';
     TicketComponent,
     LabelComponent,
     BoardComponent,
-    ColumnComponent
+    ColumnComponent,
+    ColumnContainerComponent
   ],
   imports: [
     BrowserModule,

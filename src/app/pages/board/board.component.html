@@ -1,79 +1,38 @@
 <div>
-    <div class="columns box" >
-        <div class="column ">
-            <h2 class="is-size-6 has-text-centered has-text-weight-bold" >Aufgaben</h2>
-            <div class="box mb-1  is-flex is-justify-content-space-between">
-                <span>Küche aufräumen</span>
-                <span class="tag is-primary is-light">Freizeit
-                </span>
-            </div>
-            <div class="box mb-1">
-                <div class=" is-flex is-justify-content-space-between">
-                    <span>  Kuchen backen</span>
-                    <span class="tag is-primary is-light">Freizeit
-                    </span>
-                </div>
-              
-
-            </div>
-            <div class="box mb-1 is-flex is-justify-content-space-between">
-              <span>Angular lernen</span>
-                
-                <span class="tag is-link is-light">Weiterbildung
-                </span>
-            </div>
-        </div>
-        <div class="column is-size-6 ">
-          <h2 class="has-text-centered">Diesen Monat</h2>
-          <div class="box is-flex is-justify-content-space-between">
-            <span>Staubsaugen</span>
-              
-              <span class="tag is-link is-light">Familie
-              </span>
-          </div>
-      </div>
-        <div class="column is-size-6 ">
-            <h2 class="has-text-centered">Diese Woche</h2>
-            <div class="box  is-flex is-justify-content-space-between">
-                <span>Getränke einkaufen</span>
-                <span class="tag is-warning is-light">Einkauf
-                </span>
-            </div>
-        </div>
-        <div class="column is-size-6 ">
-            <h2 class="has-text-centered">Fertig</h2>
-            <div class="card mt-1">
-                <header class="card-header">
-                  <p class="card-header-title">
-                    Finanzamt antworten
-                  </p>
-                  <button class="card-header-icon" aria-label="more options">
-                    <span class="tag is-light ">Finanzen
-                    </span>
-                  </button>
-                </header>
-              </div>
-              <div class="card mt-1">
-                <header class="card-header">
-                  <p class="card-header-title">
-                    Peter einladen 
-                  </p>
-
-                  <button class="card-header-icon" aria-label="more options">
-                    <span class="tag is-light is-primary">Freunde                      
-                    </span>
-                  </button>
-                </header>
-              </div>
-              <app-ticket [title]="'Finanzen'" >
-                <app-label [title]="'Weiterbildung'" ></app-label>
-            </app-ticket>
-              <app-ticket [title]="'Angular-Kurs'" >
-                <app-label [title]="'Weiterbildung'" ></app-label>
-            </app-ticket>
-        </div>
-
-        
-    </div>  
+  <app-column-container>
+    <!-- class column must stand outside the app-column element -->
+    <div class="column">
+      <app-column [title]="'Backlog'">
+        <app-ticket [title]="'Angular lernen'">
+          <app-label [title]="'IT-Bildung'"></app-label>
+        </app-ticket>
+        <app-ticket [title]="'React lernen'">
+          <app-label [title]="'IT-Bildung'"></app-label>
+        </app-ticket>
+        <app-ticket [title]="'Staubsaugen'">
+          <app-label [title]="'Haushalt'"></app-label>
+        </app-ticket>
+        <app-ticket [title]="'Busticket kaufen'">
+          <app-label [title]="'Einkauf'"></app-label>
+        </app-ticket>
+      </app-column>
+    </div>
+    <div class="column">
+      <app-column [title]="'Doing'">
+        <app-ticket [title]="'Geburtstagsgeschenk kaufen'">
+          <app-label [title]="'Einkauf'"></app-label>
+        </app-ticket>
+        <app-ticket [title]="'Fahrrad verkaufen'">
+          <app-label [title]="'Verkauf'"></app-label>
+        </app-ticket>
+      </app-column>
+    </div>
+    <div class="column">
+      <app-column [title]="'Closed'">
+        <app-ticket [title]="'Zimmer putzen'">
+          <app-label [title]="'Haushalt'"></app-label>
+        </app-ticket>
+      </app-column>
+    </div>
+  </app-column-container>
 </div>
-
