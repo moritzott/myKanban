@@ -12,6 +12,7 @@ import { ExportComponent } from './pages/export/export.component';
 import { TicketComponent } from './components/ticket/ticket.component';
 import { LabelComponent } from './components/label/label.component';
 import { BoardComponent } from './pages/board/board.component';
+import { ColumnComponent } from './components/column/column.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { BoardComponent } from './pages/board/board.component';
     ExportComponent,
     TicketComponent,
     LabelComponent,
-    BoardComponent
+    BoardComponent,
+    ColumnComponent
   ],
   imports: [
     BrowserModule,
