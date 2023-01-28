@@ -1,36 +1,10 @@
 <div>
   <app-column-container>
     <!-- class column must stand outside the app-column element -->
-    <div class="column">
-      <app-column [title]="'Backlog'">
-        <app-ticket [title]="'Angular lernen'">
-          <app-label [title]="'IT-Bildung'" [highlight]="'primary-light'"></app-label>
-        </app-ticket>
-        <app-ticket [title]="'React lernen'">
-          <app-label [title]="'IT-Bildung'" [highlight]="'primary-light'" ></app-label>
-        </app-ticket>
-        <app-ticket [title]="'Staubsaugen'">
-          <app-label [title]="'Haushalt'" [highlight]="'danger-light'" ></app-label>
-        </app-ticket>
-        <app-ticket [title]="'Busticket kaufen'">
-          <app-label [title]="'Einkauf'" [highlight]="'link-light'" ></app-label>
-        </app-ticket>
-      </app-column>
-    </div>
-    <div class="column">
-      <app-column [title]="'Doing'">
-        <app-ticket [title]="'Geburtstagsgeschenk kaufen'">
-          <app-label [title]="'Einkauf'" [highlight]="'link-light'" ></app-label>
-        </app-ticket>
-        <app-ticket [title]="'Fahrrad verkaufen'">
-          <app-label [title]="'Verkauf'"></app-label>
-        </app-ticket>
-      </app-column>
-    </div>
-    <div class="column">
-      <app-column [title]="'Closed'">
-        <app-ticket [title]="'Zimmer putzen'">
-          <app-label [title]="'Haushalt'" [highlight]="'danger-light'" ></app-label>
+    <div *ngFor="let column of board.columns" class="column">
+      <app-column [title]="column.name" >
+        <app-ticket *ngFor="let ticket of column.tickets" [title]="ticket.title" >
+          <app-label *ngIf="ticket.label" [title]="ticket.label.name" [highlight]="ticket.label.highlightColor" ></app-label>
         </app-ticket>
       </app-column>
     </div>
