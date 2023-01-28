@@ -14,6 +14,7 @@ import { LabelComponent } from './components/label/label.component';
 import { BoardComponent } from './pages/board/board.component';
 import { ColumnComponent } from './components/column/column.component';
 import { ColumnContainerComponent } from './components/column-container/column-container.component';
+import { NewTicketComponent } from './components/new-ticket/new-ticket.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ColumnContainerComponent } from './components/column-container/column-c
     LabelComponent,
     BoardComponent,
     ColumnComponent,
-    ColumnContainerComponent
+    ColumnContainerComponent,
+    NewTicketComponent
   ],
   imports: [
     BrowserModule,
