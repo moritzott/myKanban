@@ -1,6 +1,8 @@
+import { Column } from "./column";
 import { Status } from "./status";
 
 export interface Board {
-    columns: Status[]
-    tasks: Task[]
+    id: string,
+    name: string,
+    columns: Column[],
 }

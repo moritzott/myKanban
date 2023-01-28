@@ -1,3 +1,3 @@
 export interface Status {
-    name: 'todo' | 'doing' | 'ready'
+    name: 'Todo' | 'Doing' | 'Closed'
 }
