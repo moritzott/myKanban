@@ -4,6 +4,11 @@
 
 * {
     font-family: "Ubuntu", monospace;
+    
 }
+
+html, body {
+    height: 100%;
+  }
 
 /* TODO: add bold-weight for ubuntu font (700) */

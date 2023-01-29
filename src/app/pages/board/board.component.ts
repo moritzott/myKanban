@@ -18,5 +18,19 @@ export class BoardComponent implements OnInit {
     public dataset: MyKanban = myKbn1;
     public board = this.dataset.boards[0];
   
+    public dragTicketHandler(event: DragEvent): void {
+      console.log('drag');
+      (event.target as HTMLElement).style.opacity = "0";
+      
+    };
+
+    public dragOverColumnHandler(event: DragEvent): void {
+      event.preventDefault();
+    }
+
+    public dropOnColumnHandler(event: DragEvent): void {
+      console.log('Drpped here');
+      
+    }
 
 }
